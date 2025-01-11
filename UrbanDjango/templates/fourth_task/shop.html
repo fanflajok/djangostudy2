@@ -1,0 +1,20 @@
+{%extends 'menu.html'%}
+
+
+
+{%block pagename%}
+    <h1>Игры</h1>
+{% endblock %}
+
+{%block content%}
+    <ul>
+        {%for i in list%}
+            <p>{{i}} <button>Купить за 4999 рублей</button></p>
+        {%endfor%}
+    </ul>
+    <button><a href="/main/"><h2>На главную</h2></a></button>
+    <button><a href="/main/cart/"><h2>Перейти в корзину</h2></a></button>
+{%endblock%}
+
+
+
