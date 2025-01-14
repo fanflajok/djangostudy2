@@ -7,6 +7,7 @@
 <body>
     <form method="post">
         {%csrf_token%}
+        <p>{{error}}</p>
         <label for = "username"> Введите логин </label>
         <input type="text" id="username" name="username" maxlength="30" required>
 
@@ -16,7 +17,7 @@
         <label for = "repeat_password"> Повторите пароль</label>
         <input type="text" id="repeat_password" name="repeat_password" minlength="8" required>
 
-        <label for = "age"> Введите свой возраст "</label>
+        <label for = "age"> Введите свой возраст </label>
         <input type="number" id="age" name="age" min="0" max="150" required>
         <button type="submit"> Зарегистрироваться. </button>
     </form>
