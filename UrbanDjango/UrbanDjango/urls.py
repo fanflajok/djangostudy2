@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import class_temp, func_temp
 from task4.views import shop,cart,main
+from task5.views import sign_up_by_django
 
 
 
@@ -27,5 +28,6 @@ urlpatterns = [
     path('func/', func_temp),
     path('main/', main),
     path('main/shop/', shop),
-    path('main/cart/', cart)
+    path('main/cart/', cart),
+    path('django_sign_up/', sign_up_by_django)
 ]
