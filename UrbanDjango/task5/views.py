@@ -12,7 +12,7 @@ def sign_up_by_django(request):
     info = {}
     context = {
         'info': info,
-        'form': form
+        'form': form,
     }
     if request.method == 'POST':
         if form.is_valid():
